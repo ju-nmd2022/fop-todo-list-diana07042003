@@ -1,12 +1,46 @@
-body{
+html, body{
     background-color: goldenrod;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
 
 }
-.h{
-    color: saddlebrown;
-    font-family: sans-serif;
-    min-height: 150vh;
-    background-color: goldenrod;
 
+
+.container{
+    width: 520px;
+    color: darkgreen;
+    border: 5px white;
+    position: absolute;
+    left: 33%;
+
+}
+
+#inputField {
+    width: 300px;
+    height:30px;
+    border-radius: 5;
+    font-size: 20px;
+    
+}
+
+#addATask{
+    height: 32px;
+    width: 30px;
+    border: 3px black;
+   
+    font-size: 15px;
+    position: absolute;
+    left: 80%;
+}
+
+.tasks{
+    margin-top: 10px;
+    font-size: 50;
+}
+
+.paragraph-styling{
+margin: 0;
+cursor: pointer;
+font-size: 60;
 }
