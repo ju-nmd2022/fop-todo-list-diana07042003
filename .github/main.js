@@ -1,3 +1,6 @@
+
+
+
 let addATaskButton = document.getElementById('addATask');
 let tasksContainer = document.getElementById('tasksContainer');
 let inputField = document.getElementById('inputField');
@@ -16,3 +19,14 @@ addATaskButton.addEventListener('click', function() {
         tasksContainer.removeChild(paragraph);
     })
 })
+
+
+
+const tasks = JSON.parse (localStorage.getItem('tasks'))
+
+if (tasks){
+    tasks.forEach((task) =>
+{
+    insertTaskIntoPage(task)
+})
+}
