@@ -42,6 +42,8 @@ taskList.forEach((data, index )=> {
     <div class="todoList">
     <p class="pText">${data}</p>
     <button class="deleteTask" onClick="deleteItem(${index})">x</button>
+    <button class="checkedTask" onClick="toggleSize(this)(${index})">✔️</button>
+
     </div>
     `
 })
@@ -57,4 +59,7 @@ function deleteItem(index){
 }
 
 
-    
+   
+function toggleSize(element) {
+    element.classList.toggle("enlarged");
+  }
